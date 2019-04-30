@@ -1,5 +1,5 @@
 function searchInput(){
-    const searchVisibility = document.getElementById("search");
+    const searchVisibility = document.getElementById("search-input");
     if(searchVisibility.style.visibility === "hidden"){
         searchVisibility.style.visibility = "visible";
     }else {
