@@ -3,6 +3,7 @@
     --whiteStandard: rgb(153, 175, 191);
     --whiteBackground: rgb(205, 212, 218);
     --blueFont: rgb(2, 58, 92);
+    --boxShadow: #00000059;
 }
 
 .container {
@@ -23,12 +24,12 @@ header {
 .header {
     display: grid;
     grid-template-areas: 
-    "logo navigation loop";
+    "logo navigation";
 }
 
 #logo {
     grid-area: logo;
-    box-shadow: 10px 10px 10px -10px #00000059;
+    box-shadow: 10px 10px 10px -10px var(--boxShadow);
 }
 
 #main-navigation {
@@ -88,10 +89,8 @@ main {
     height: 100%;
     padding-top: 100px;
     background-color: #fff;
-    box-shadow: 10px 0px 10px -10px #00000059;
+    box-shadow: 10px 0px 10px -10px var(--boxShadow);
     z-index: 1;
-    overflow-x: hidden;
-    text-align: left;
     transition: 0.5s ease-in-out all;
 }
 
@@ -99,7 +98,7 @@ main {
     color: var(--blueFont);
     text-decoration: none;
     display: block;
-    padding: 15px;
+    padding: 10px;
     margin-left: 20px;
 }
 
